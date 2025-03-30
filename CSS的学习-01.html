@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB18030">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习实验网页2</title>
+    <style>
+        /* CSS代码 */
+        /* 选择器{CSS属性} */
+        p {
+           color: red; 
+           font-size: 30px;
+        }
+
+        /* 一、标签选择器 */
+        p2 {
+            color: orange;
+        }
+
+        /* 二、类选择器 */
+        /* 定义 */
+        .aqua{
+            color: aqua;
+        }
+        .size{
+            font-size: 20px;
+        }
+
+        /* 三、id选择器 */
+        /* 定义 */
+        #purple{
+            color: purple;
+        }
+
+        /* 四、通配符选择器 */
+        /* 定义 */
+        /* *{
+            color: brown;
+        } */
+
+        /* 第四节：画盒子 */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+        }
+
+
+        /* 第五节：字体修饰属性 */
+        /* 一、字体大小 */
+        p5{
+            font-size: 30px;
+        }
+
+        /* 二、字体粗细 */
+        p6{
+            font-weight: 700;
+        }
+
+        /* 三、字体样式 */
+        em{
+            font-style: normal;
+        }
+        div1{
+            font-style: italic;
+        }
+
+        /* 四、行高 */
+        /*（1）行高 */
+        p7{
+            /* line-height: 30px; */
+            line-height: 2; /* 字号的2倍 */
+        }
+
+        /* （2）行高-垂直居中 */
+        /* div{
+            height: 100px;
+            background-color: skyblue;
+            line-height: 100px;
+        } */
+
+        /* 五、字体族 */
+        p8{
+            font-family: 楷体;
+        }
+        
+        /* 六、字体复合属性 */
+        p9{
+            /* 文字倾斜、文字加粗、字体大小30px、行高2倍、楷体 */
+            font: italic 700 30px/2 楷体;
+        }
+
+        /* 七、文本缩进 */
+        /* p{
+            /* p标签有效 */
+            /*text-indent: 2em;
+        } */
+
+        /* 八、文本对齐 */
+        /* （1）文本对齐方式 */
+        h5{
+            text-align: left;
+        }
+
+        h6{
+            /* text-align: center; */
+            text-align: right;
+        }
+
+        /* （2）文本对齐方式-图片 */
+        /* div有效 */
+        div{
+            text-align: center;
+        }
+
+        /* 九、修饰线 */
+        /* （1）下划线删除 */
+        a{
+            text-decoration: none;
+        }
+        /* （2）下划线添加 */
+        div2{
+            text-decoration: underline;
+        }
+        /* （3）删除线添加 */
+        div3{
+            text-decoration: line-through;
+        }
+        /* （4）上划线添加 */
+        div4{
+            text-decoration: overline;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS的学习-02.css">
+</head>
+<body>
+    <hr>
+    <h2>第一节：CSS初体验</h2>
+    <h3>将字体变红</h3>
+    <p>红色的字体</p>
+
+
+    <hr>
+    <h2>第二节：CSS引入方式</h2>
+    <p1>（1）使用外部文件将字体进行修饰</p1>
+    <br><br>
+    <div style="color: green; font-size: 20px;">（2）在行内书写CSS代码进行修饰</div>
+
+    
+    <hr>
+    <h2>第三节：选择器</h2>
+
+    <h3>一、标签选择器</h3>
+    <p2>p2标签的内容1</p2>
+    <br>
+    <p2>p2标签的内容2</p2>
+    <br>
+    <p2>p2标签的内容3</p2>
+
+    <h3>二、类选择器</h3>
+    <p3 class="aqua">p3标签的内容1</p3>
+    <br>
+    <p3>p3标签的内容2</p3>
+    <br>
+    <div class="aqua size">div中的内容</div>
+
+    <h3>三、id选择器</h3>
+    <div id="purple">id选择器改变字体颜色</div>
+
+    <h3>四、通配符选择器</h3>
+    <p4>p4中的内容</p4>
+    <div>测试div内容</div>
+    <h2>测试标题</h2>
+
+
+    <hr>
+    <h2>第四节：画盒子</h2>
+    <div class="box1">div1</div>
+    <div class="box2">div2</div>
+
+
+    <hr>
+    <h2>第五节：字体修饰符属性</h2>
+    <h3>一、字体大小</h3>
+    文字&
+    <p5>文字</p5>
+
+    <h3>二、字体粗细</h3>
+    文字&
+    <p6>文字</p6>
+
+    <h3>三、字体</h3>
+    <em>em</em>
+    <br>
+    <div1>div</div1>
+
+    <h3>四、行高</h3>
+    <br>
+    <h4>（1）行高</h4>
+    <p7>避免长时间连续用眼，尤其是使用电子设备。每用眼45分钟至1小时，应休息10分钟，远眺或做眼保健操；长时间用眼会导致眼部疲劳，加重散光；充足的睡眠有助于眼部肌肉放松，减轻散光症状；在采取任何治疗措施之前，建议咨询专业的眼科医生，以确保选择最适合自己的方法</p7>
+    
+    <h4>（2）行高-垂直居中</h4>
+    <div>字体</div>
+
+    <h3>五、字体族</h3>
+    <p8>测试字体1</p8>
+    
+    <h3>六、字体复合属性</h3>
+    <p9>测试字体2</p9>
+
+    <h3>七、文本缩进</h3>
+    <!-- <p>避免长时间连续用眼，尤其是使用电子设备。每用眼45分钟至1小时，应休息10分钟，远眺或做眼保健操；长时间用眼会导致眼部疲劳，加重散光；充足的睡眠有助于眼部肌肉放松，减轻散光症状；在采取任何治疗措施之前，建议咨询专业的眼科医生，以确保选择最适合自己的方法</p> -->
+
+    <h3>八、文本对齐</h3>
+    <h4>（1）文本对齐方式</h4>
+    <h5>测试标题-左对齐</h5>
+    <h6>测试标题-居中</h6>
+
+    <h4>（2）文本对齐方式-图片</h4>
+    <div>
+        <img src="./屏幕截图 2024-12-31 195752.png" width="200">
+    </div>
+
+    <h3>九、修饰线</h3>
+    <h4>（1）下划线删除</h4>
+    <a href="#">a标签下划线测试</a>
+
+    <h4>（2）下划线添加</h4>
+    <div2>div2标签下划线添加</div2>
+
+    <h3>（3）删除线添加</h3>
+    <div3>div3删除线添加</div3>
+
+    <h3>（4）上划线添加</h3>
+    <div4>div4上划线添加</div4>
+</body>
+</html>
